@@ -53,10 +53,6 @@ class StackWorkViewController: UIViewController {
 			
 			v.translatesAutoresizingMaskIntoConstraints = false
 			
-			// hmmm... thought this was necessary, but apparently not
-//			v.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
-//			v.widthAnchor.constraint(greaterThanOrEqualToConstant: 200).isActive = true
-			
 			theStackView.addArrangedSubview(v)
 			
 		}
