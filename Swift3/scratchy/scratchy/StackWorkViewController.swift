@@ -28,6 +28,8 @@ class StackWorkViewController: UIViewController {
 	
 	@IBAction func testTap(_ sender: Any) {
 		
+		// just output the arrangedSubviews description if views have already been added
+		// the new subviews SHOULD now have the correct frames, because the UI has now updated
 		if theStackView.arrangedSubviews.count > 2 {
 
 			print(theStackView.arrangedSubviews)
@@ -36,6 +38,7 @@ class StackWorkViewController: UIViewController {
 			
 		}
 
+		// just for debugging the layouts... print the description of the views added in IB
 		print(theStackView.arrangedSubviews)
 		
 		for i in 1...4 {
@@ -50,13 +53,16 @@ class StackWorkViewController: UIViewController {
 			
 			v.translatesAutoresizingMaskIntoConstraints = false
 			
-			v.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
-			v.widthAnchor.constraint(greaterThanOrEqualToConstant: 200).isActive = true
+			// hmmm... thought this was necessary, but apparently not
+//			v.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
+//			v.widthAnchor.constraint(greaterThanOrEqualToConstant: 200).isActive = true
 			
 			theStackView.addArrangedSubview(v)
 			
 		}
 		
+		// just for debugging the layouts... print the description of the views immediately after adding them
+		// the new subviews should *not* have the correct frames, because the UI has not yet updated
 		print(theStackView.arrangedSubviews)
 		
 	}

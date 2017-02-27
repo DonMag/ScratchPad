@@ -22,15 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-4s-BCC">
-                                <rect key="frame" x="62" y="95" width="250" height="406"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-4s-BCC">
+                                <rect key="frame" x="62" y="95" width="250" height="512"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDN-Db-t7J">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="193"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="251"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxz-GM-6jb">
-                                        <rect key="frame" x="0.0" y="213" width="250" height="193"/>
+                                        <rect key="frame" x="0.0" y="261" width="250" height="251"/>
                                         <color key="backgroundColor" red="0.71728766030000002" green="0.0067189837739999999" blue="0.02686780528" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" red="0.3371302692" green="0.59108051859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V4U-4s-BCC" firstAttribute="leading" secondItem="nBP-wn-NMD" secondAttribute="leadingMargin" constant="46" id="9Ab-Kt-BNg"/>
-                            <constraint firstItem="N6k-5x-F2Y" firstAttribute="top" secondItem="V4U-4s-BCC" secondAttribute="bottom" constant="166" id="Hgo-Hz-auY"/>
+                            <constraint firstItem="N6k-5x-F2Y" firstAttribute="top" secondItem="V4U-4s-BCC" secondAttribute="bottom" constant="60" id="Hgo-Hz-auY"/>
                             <constraint firstItem="GRe-kH-L43" firstAttribute="centerX" secondItem="nBP-wn-NMD" secondAttribute="centerX" id="I6S-nC-vna"/>
                             <constraint firstItem="GRe-kH-L43" firstAttribute="top" secondItem="lOG-4a-63v" secondAttribute="bottom" constant="8" id="T12-8P-vAo"/>
                             <constraint firstItem="V4U-4s-BCC" firstAttribute="top" secondItem="lOG-4a-63v" secondAttribute="bottom" constant="75" id="bOp-Lx-Cv0"/>
