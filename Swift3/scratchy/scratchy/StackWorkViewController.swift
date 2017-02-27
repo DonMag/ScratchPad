@@ -12,8 +12,6 @@ class StackWorkViewController: UIViewController {
 
 	@IBOutlet weak var theStackView: UIStackView!
 	
-	let clrs = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.green]
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,26 +26,20 @@ class StackWorkViewController: UIViewController {
 	
 	@IBAction func testTap(_ sender: Any) {
 		
-		// just output the arrangedSubviews description if views have already been added
-		// the new subviews SHOULD now have the correct frames, because the UI has now updated
 		if theStackView.arrangedSubviews.count > 2 {
 
-			print(theStackView.arrangedSubviews)
-
+			// we already added the subviews
 			return
 			
 		}
 
-		// just for debugging the layouts... print the description of the views added in IB
-		print(theStackView.arrangedSubviews)
+		let clrs = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.green]
 		
 		for i in 1...4 {
 			
-			guard let v = UINib(nibName: "SampleView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? UIView else { return }
+			let v = SampleView()
 			
-			guard let lbl = v.viewWithTag(99) as? UILabel else { return }
-			
-			lbl.text = "\(i)"
+			v.theLabel.text = "\(i)"
 			
 			v.backgroundColor = clrs[i % 4]
 			
@@ -57,21 +49,6 @@ class StackWorkViewController: UIViewController {
 			
 		}
 		
-		// just for debugging the layouts... print the description of the views immediately after adding them
-		// the new subviews should *not* have the correct frames, because the UI has not yet updated
-		print(theStackView.arrangedSubviews)
-		
 	}
 	
-	
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

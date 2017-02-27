@@ -13,6 +13,7 @@
 		7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F391E521C0C00CEC340 /* Assets.xcassets */; };
 		7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F3B1E521C0C00CEC340 /* LaunchScreen.storyboard */; };
 		7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEF5F5B1E648C02005A5E88 /* SampleView.xib */; };
+		7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF5F631E64A4D9005A5E88 /* SampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7C205F3C1E521C0C00CEC340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C205F3E1E521C0C00CEC340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CEF5F5B1E648C02005A5E88 /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
+		7CEF5F631E64A4D9005A5E88 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		7C205F311E521C0C00CEC340 /* scratchy */ = {
 			isa = PBXGroup;
 			children = (
-				7CEF5F5B1E648C02005A5E88 /* SampleView.xib */,
 				7C205F321E521C0C00CEC340 /* AppDelegate.swift */,
 				7C205F361E521C0C00CEC340 /* Main.storyboard */,
 				7C205F391E521C0C00CEC340 /* Assets.xcassets */,
 				7C205F3B1E521C0C00CEC340 /* LaunchScreen.storyboard */,
 				7C205F3E1E521C0C00CEC340 /* Info.plist */,
 				7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */,
+				7CEF5F5B1E648C02005A5E88 /* SampleView.xib */,
+				7CEF5F631E64A4D9005A5E88 /* SampleView.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C205F331E521C0C00CEC340 /* AppDelegate.swift in Sources */,
+				7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */,
 				7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
