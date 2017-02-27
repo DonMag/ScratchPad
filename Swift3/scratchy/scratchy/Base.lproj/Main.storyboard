@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qv6-P8-jQF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stack Work View Controller-->
+        <scene sceneID="p7d-da-dkD">
+            <objects>
+                <viewController id="Qv6-P8-jQF" customClass="StackWorkViewController" customModule="scratchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOG-4a-63v"/>
+                        <viewControllerLayoutGuide type="bottom" id="N6k-5x-F2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nBP-wn-NMD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-4s-BCC">
+                                <rect key="frame" x="62" y="95" width="250" height="406"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDN-Db-t7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="193"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxz-GM-6jb">
+                                        <rect key="frame" x="0.0" y="213" width="250" height="193"/>
+                                        <color key="backgroundColor" red="0.71728766030000002" green="0.0067189837739999999" blue="0.02686780528" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-kH-L43">
+                                <rect key="frame" x="127.5" y="28" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DAV-oL-1N8"/>
+                                    <constraint firstAttribute="width" constant="120" id="b00-k7-F7N"/>
+                                </constraints>
+                                <state key="normal" title="Test It"/>
+                                <connections>
+                                    <action selector="testTap:" destination="Qv6-P8-jQF" eventType="touchUpInside" id="MOg-Af-XBZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3371302692" green="0.59108051859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V4U-4s-BCC" firstAttribute="leading" secondItem="nBP-wn-NMD" secondAttribute="leadingMargin" constant="46" id="9Ab-Kt-BNg"/>
+                            <constraint firstItem="N6k-5x-F2Y" firstAttribute="top" secondItem="V4U-4s-BCC" secondAttribute="bottom" constant="166" id="Hgo-Hz-auY"/>
+                            <constraint firstItem="GRe-kH-L43" firstAttribute="centerX" secondItem="nBP-wn-NMD" secondAttribute="centerX" id="I6S-nC-vna"/>
+                            <constraint firstItem="GRe-kH-L43" firstAttribute="top" secondItem="lOG-4a-63v" secondAttribute="bottom" constant="8" id="T12-8P-vAo"/>
+                            <constraint firstItem="V4U-4s-BCC" firstAttribute="top" secondItem="lOG-4a-63v" secondAttribute="bottom" constant="75" id="bOp-Lx-Cv0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V4U-4s-BCC" secondAttribute="trailing" constant="47" id="fal-ae-sjU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theStackView" destination="V4U-4s-BCC" id="f1l-RJ-hpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2K-Mt-uY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="-26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
