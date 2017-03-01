@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-iM-9Lr">
+                                <rect key="frame" x="67.5" y="318" width="240" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RU1-V5-l6C">
+                                        <rect key="frame" x="16" y="0.0" width="402" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBo-Vc-dcd">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                <state key="normal" title="Chats"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gt-NL-VuL">
+                                                <rect key="frame" x="60" y="0.0" width="47" height="30"/>
+                                                <state key="normal" title="People"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odv-rd-0me">
+                                                <rect key="frame" x="127" y="0.0" width="81" height="30"/>
+                                                <state key="normal" title="SuperUsers"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPL-EO-K0H">
+                                                <rect key="frame" x="228" y="0.0" width="50" height="30"/>
+                                                <state key="normal" title="Groups"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-zE-4Dp">
+                                                <rect key="frame" x="298" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Events"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHg-ET-xV7">
+                                                <rect key="frame" x="364" y="0.0" width="38" height="30"/>
+                                                <state key="normal" title="Posts"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RU1-V5-l6C" firstAttribute="top" secondItem="NcS-iM-9Lr" secondAttribute="top" id="HD0-MZ-119"/>
+                                    <constraint firstAttribute="trailing" secondItem="RU1-V5-l6C" secondAttribute="trailing" constant="16" id="PWe-yi-Mi2"/>
+                                    <constraint firstAttribute="height" constant="30" id="fjU-Dl-Z8z"/>
+                                    <constraint firstItem="RU1-V5-l6C" firstAttribute="leading" secondItem="NcS-iM-9Lr" secondAttribute="leading" constant="16" id="kgI-U0-P28"/>
+                                    <constraint firstAttribute="bottom" secondItem="RU1-V5-l6C" secondAttribute="bottom" id="xBP-4N-gEx"/>
+                                    <constraint firstAttribute="width" constant="240" id="zoD-Gq-0XS"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-iz-Hbb">
+                                <rect key="frame" x="22" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Res-an-gV3"/>
+                                    <constraint firstAttribute="width" constant="46" id="kls-VL-L5x"/>
+                                </constraints>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="42u-sj-pyk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydf-Vk-XgN">
+                                <rect key="frame" x="306" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o2l-Xf-rDp"/>
+                                    <constraint firstAttribute="width" constant="46" id="wKa-9m-Jfj"/>
+                                </constraints>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="forwardBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4W-Ot-spT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l8F-iz-Hbb" firstAttribute="top" secondItem="NcS-iM-9Lr" secondAttribute="top" id="5Ms-bV-X0n"/>
+                            <constraint firstItem="NcS-iM-9Lr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5wx-95-HDb"/>
+                            <constraint firstItem="ydf-Vk-XgN" firstAttribute="leading" secondItem="NcS-iM-9Lr" secondAttribute="trailing" constant="-1.5" id="CV6-rN-t8d"/>
+                            <constraint firstItem="NcS-iM-9Lr" firstAttribute="leading" secondItem="l8F-iz-Hbb" secondAttribute="trailing" constant="-0.5" id="XG2-5s-oc3"/>
+                            <constraint firstItem="NcS-iM-9Lr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qzg-GO-K7P"/>
+                            <constraint firstItem="ydf-Vk-XgN" firstAttribute="top" secondItem="NcS-iM-9Lr" secondAttribute="top" id="sMy-lm-xlq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theScrollView" destination="NcS-iM-9Lr" id="NeZ-wh-dqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
