@@ -26,6 +26,8 @@
 	// want to change the foreground / text color of the Checkmarks?
 //	self.tableView.tintColor = [UIColor redColor];
 	
+	self.tableView.rowHeight = 80.0;
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,10 +45,29 @@
     return 10;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	if (cell.accessoryView) {
+
+		CGRect r = cell.frame;
+		CGRect cvr = cell.contentView.frame;
+		CGRect avr = cell.accessoryView.bounds;
+
+		avr.size.width = r.size.width - cvr.size.width;
+		cell.accessoryView.frame = avr;
+		
+	}
+	
+	
+	int x = 1;
+	
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"aCell" forIndexPath:indexPath];
-    
+	
+	BOOL bShowCheckmark = indexPath.row % 2;
+	
     // Configure the cell...
 	
 	cell.textLabel.text = [NSString stringWithFormat:@"Section / Row: %ld / %ld", (long)indexPath.section, (long)indexPath.row];
@@ -55,11 +76,19 @@
 	
 	myBackgroundView.backgroundColor = [UIColor cyanColor];
 
-	cell.backgroundView = myBackgroundView;
+//	cell.backgroundView = myBackgroundView;
 	
-	cell.textLabel.backgroundColor = [UIColor clearColor];
+	cell.textLabel.backgroundColor = [UIColor yellowColor];
+
+	cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	
-	cell.accessoryType = indexPath.row % 2 ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+	if (!bShowCheckmark) {
+		UIView* myAcc = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.accessoryView.frame.size.width, 4)];
+		myAcc.backgroundColor = [UIColor whiteColor];
+		cell.accessoryView = myAcc;
+	}
+	
+//	cell.accessoryType = indexPath.row % 2 ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 	
     return cell;
 }

@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */; };
+		7C1EAC5D1E71FEF100312991 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1EAC5C1E71FEF100312991 /* ProfileViewController.swift */; };
 		7C205F331E521C0C00CEC340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C205F321E521C0C00CEC340 /* AppDelegate.swift */; };
 		7C205F381E521C0C00CEC340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F361E521C0C00CEC340 /* Main.storyboard */; };
 		7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F391E521C0C00CEC340 /* Assets.xcassets */; };
 		7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F3B1E521C0C00CEC340 /* LaunchScreen.storyboard */; };
+		7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */; };
+		7C27CE2C1E69F4C8002C2957 /* FooterViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27CE2B1E69F4C8002C2957 /* FooterViewViewController.swift */; };
+		7C64921E1E72E77600FE00F8 /* portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C64921D1E72E77600FE00F8 /* portrait.png */; };
+		7CD27CF81E686D8C00B7FD2D /* BetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD27CF71E686D8C00B7FD2D /* BetterButton.swift */; };
+		7CD27CFA1E686DD900B7FD2D /* BetterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD27CF91E686DD900B7FD2D /* BetterButtonViewController.swift */; };
 		7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEF5F5B1E648C02005A5E88 /* SampleView.xib */; };
 		7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF5F631E64A4D9005A5E88 /* SampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWorkViewController.swift; sourceTree = "<group>"; };
+		7C1EAC5C1E71FEF100312991 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7C205F2F1E521C0C00CEC340 /* scratchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scratchy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C205F321E521C0C00CEC340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C205F371E521C0C00CEC340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C205F391E521C0C00CEC340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C205F3C1E521C0C00CEC340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C205F3E1E521C0C00CEC340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWithTargetViewController.swift; sourceTree = "<group>"; };
+		7C27CE2B1E69F4C8002C2957 /* FooterViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterViewViewController.swift; sourceTree = "<group>"; };
+		7C64921D1E72E77600FE00F8 /* portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait.png; sourceTree = "<group>"; };
+		7CD27CF71E686D8C00B7FD2D /* BetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterButton.swift; sourceTree = "<group>"; };
+		7CD27CF91E686DD900B7FD2D /* BetterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterButtonViewController.swift; sourceTree = "<group>"; };
 		7CEF5F5B1E648C02005A5E88 /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		7CEF5F631E64A4D9005A5E88 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +78,12 @@
 				7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */,
 				7CEF5F5B1E648C02005A5E88 /* SampleView.xib */,
 				7CEF5F631E64A4D9005A5E88 /* SampleView.swift */,
+				7CD27CF71E686D8C00B7FD2D /* BetterButton.swift */,
+				7CD27CF91E686DD900B7FD2D /* BetterButtonViewController.swift */,
+				7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */,
+				7C27CE2B1E69F4C8002C2957 /* FooterViewViewController.swift */,
+				7C1EAC5C1E71FEF100312991 /* ProfileViewController.swift */,
+				7C64921D1E72E77600FE00F8 /* portrait.png */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -102,6 +120,7 @@
 				TargetAttributes = {
 					7C205F2E1E521C0B00CEC340 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q6X2C36SSC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +150,7 @@
 			files = (
 				7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */,
 				7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */,
+				7C64921E1E72E77600FE00F8 /* portrait.png in Resources */,
 				7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */,
 				7C205F381E521C0C00CEC340 /* Main.storyboard in Resources */,
 			);
@@ -143,9 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */,
+				7C27CE2C1E69F4C8002C2957 /* FooterViewViewController.swift in Sources */,
 				7C205F331E521C0C00CEC340 /* AppDelegate.swift in Sources */,
 				7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */,
 				7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */,
+				7CD27CFA1E686DD900B7FD2D /* BetterButtonViewController.swift in Sources */,
+				7C1EAC5D1E71FEF100312991 /* ProfileViewController.swift in Sources */,
+				7CD27CF81E686D8C00B7FD2D /* BetterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q6X2C36SSC;
 				INFOPLIST_FILE = scratchy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.scratchy;
@@ -280,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q6X2C36SSC;
 				INFOPLIST_FILE = scratchy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.scratchy;

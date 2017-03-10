@@ -38,6 +38,7 @@ class SampleView: UIView {
 		
 		// Adding custom subview on top of our view (over any custom drawing > see note below)
 		addSubview(contentView)
+		
 	}
 	
 	func loadViewFromNib() -> UIView! {
