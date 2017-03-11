@@ -114,7 +114,6 @@
 				TargetAttributes = {
 					7C205F2E1E521C0B00CEC340 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q6X2C36SSC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -285,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q6X2C36SSC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = scratchy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.scratchy;
@@ -298,7 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q6X2C36SSC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = scratchy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.scratchy;

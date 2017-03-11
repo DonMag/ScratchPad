@@ -18,33 +18,6 @@ class StackWorkViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 		
-		
-		self.view.backgroundColor = UIColor.red
-		
-		let upgradeView: UIView = UIView()
-		upgradeView.translatesAutoresizingMaskIntoConstraints = false
-		
-		upgradeView.backgroundColor = UIColor.blue
-		
-		self.view.addSubview(upgradeView)
-		
-		let margins = self.view.layoutMarginsGuide
-		print(margins)
-		upgradeView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor,
-		                                 constant: 0).isActive = true
-		
-		upgradeView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-		upgradeView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-		
-		upgradeView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-		
-		upgradeView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor,
-		                                    constant: 0).isActive = true
-		
-		self.view.sendSubview(toBack: upgradeView)
-		
-		self.view.setNeedsUpdateConstraints()
-
     }
 
     override func didReceiveMemoryWarning() {
