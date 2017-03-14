@@ -18,7 +18,7 @@ class ViewWithTableViewHeaderViewController: UIViewController, UITableViewDelega
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		
+				
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +69,9 @@ class ViewWithTableViewHeaderViewController: UIViewController, UITableViewDelega
 		return cell
 	}
 
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
+	}
 	
     /*
     // MARK: - Navigation
