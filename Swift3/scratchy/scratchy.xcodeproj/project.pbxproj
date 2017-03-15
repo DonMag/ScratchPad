@@ -16,6 +16,7 @@
 		7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */; };
 		7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */; };
 		7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */; };
+		7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA2EF1E79C88800614651 /* MyPickerView.swift */; };
 		7CD27CF81E686D8C00B7FD2D /* BetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD27CF71E686D8C00B7FD2D /* BetterButton.swift */; };
 		7CD27CFA1E686DD900B7FD2D /* BetterButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD27CF91E686DD900B7FD2D /* BetterButtonViewController.swift */; };
 		7CE4E7CD1E770BDB00A01F64 /* ShadowedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4E7CC1E770BDB00A01F64 /* ShadowedViewController.swift */; };
@@ -36,6 +37,7 @@
 		7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWithTargetViewController.swift; sourceTree = "<group>"; };
 		7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableViewHeaderViewController.swift; sourceTree = "<group>"; };
 		7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		7C9DA2EF1E79C88800614651 /* MyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
 		7CD27CF71E686D8C00B7FD2D /* BetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterButton.swift; sourceTree = "<group>"; };
 		7CD27CF91E686DD900B7FD2D /* BetterButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterButtonViewController.swift; sourceTree = "<group>"; };
 		7CE4E7CC1E770BDB00A01F64 /* ShadowedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				68A22D3D1E7462B5005DB1EF /* GridOfBoxesViewController.swift */,
 				7C5D49FF1E781348004DFE18 /* ShadowView */,
 				7C5D4A081E7820EC004DFE18 /* AutoSizeTableHeaderView */,
+				7C9DA2EF1E79C88800614651 /* MyPickerView.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				7CE4E7CF1E770C1100A01F64 /* ShadowView.swift in Sources */,
 				7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */,
 				7C205F331E521C0C00CEC340 /* AppDelegate.swift in Sources */,
+				7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */,
 				7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */,
 				68A22D3E1E7462B5005DB1EF /* GridOfBoxesViewController.swift in Sources */,
 				7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */,

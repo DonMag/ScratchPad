@@ -13,6 +13,8 @@ class ShadowedViewController: UIViewController {
 	@IBOutlet weak var trayBottomView: UIView!
 	@IBOutlet weak var trayBottomConstraint: NSLayoutConstraint!
 	
+	@IBOutlet weak var thePageControl: UIPageControl!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,8 @@ class ShadowedViewController: UIViewController {
 		// hide the "tray" view
 		trayBottomView.isHidden = true
 		
+		thePageControl.numberOfPages = 7
+
     }
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -59,6 +63,29 @@ class ShadowedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func pgControlValueChanged(_ sender: Any) {
+		if let pgc = sender as? UIPageControl {
+			if pgc.currentPage % 2 == 1 {
+    
+				self.trayBottomConstraint.constant = -self.trayBottomView.frame.height
+
+			} else {
+			
+				self.trayBottomConstraint.constant = 0
+			
+			}
+			
+			// animate it in or out of view
+			
+			UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+				
+				self.view.layoutIfNeeded()
+				
+			})
+			
+		}
+	}
+	
 	@IBAction func buttonTapped(_ sender: Any) {
 
 		// if the tray Bottom Constraint is Zero, that means it is visible, so
