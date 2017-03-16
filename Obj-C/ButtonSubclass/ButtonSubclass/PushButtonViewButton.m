@@ -32,10 +32,8 @@ UIColor *cColor;
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	// Call the parent implementation of initWithCoder
 	self = [super initWithCoder:coder];
 	
-	// Custom drawing methods
 	if (self) {
 		[self commonInit];
 	}
@@ -45,7 +43,11 @@ UIColor *cColor;
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
-	[self commonInit]; // Run time, loading from xib.
+	[self commonInit];
+}
+
+- (void)prepareForInterfaceBuilder {
+	[self commonInit];
 }
 
 - (void)commonInit {
@@ -56,7 +58,13 @@ UIColor *cColor;
 	if (!_highlightColor) {
 		_highlightColor = [UIColor yellowColor];
 	}
+
+	// make sure background is clear, or we see a bounding box
+	self.backgroundColor = [UIColor clearColor];
 	
+//	self.layer.cornerRadius = MIN(self.frame.size.height, self.frame.size.width) / 2.0;
+//	self.clipsToBounds = YES;
+
 }
 
 - (void)setNormalColor:(UIColor *)nColor {
@@ -73,16 +81,16 @@ UIColor *cColor;
 
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-
-	CGFloat xc = self.bounds.size.width / 2;
-	CGFloat yc = self.bounds.size.height / 2;
 	
-	CGFloat xoff = xc * 0.1;
-	CGFloat yoff = yc * 0.1;
+	[super drawRect:rect];
+
+	CGFloat halfW = rect.size.width / 2;
+	CGFloat halfH = rect.size.height / 2;
 	
 	UIBezierPath *pth;
 	
-	pth = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:MIN(xc, yc)];
+	// rounded corners... if the rect is 1:1 ratio, you'll get a circle
+	pth = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:MIN(halfW, halfH)];
 
 	if (self.isHighlighted) {
 		[_highlightColor setFill];
@@ -92,17 +100,21 @@ UIColor *cColor;
 	
 	[pth fill];
 	
+	// draw a diamond shape inside the rounded rect, just to demonstrate a little additional drawing
+	CGFloat xoff = halfW * 0.1;
+	CGFloat yoff = halfH * 0.1;
+	
 	pth = [[UIBezierPath alloc] init];
 	
 	pth.lineWidth = 2.0;
 	
-	[pth moveToPoint:CGPointMake(xoff, yc)];
-	[pth addLineToPoint:CGPointMake(xc, yoff)];
-	[pth addLineToPoint:CGPointMake(self.bounds.size.width - xoff, yc)];
-	[pth addLineToPoint:CGPointMake(xc, self.bounds.size.height - yoff)];
+	[pth moveToPoint:CGPointMake(xoff, halfH)];
+	[pth addLineToPoint:CGPointMake(halfW, yoff)];
+	[pth addLineToPoint:CGPointMake(rect.size.width - xoff, halfH)];
+	[pth addLineToPoint:CGPointMake(halfW, rect.size.height - yoff)];
 	[pth closePath];
 	
-	[[UIColor whiteColor] setStroke];
+	[self.titleLabel.textColor setStroke];
 	
 	[pth stroke];
 	

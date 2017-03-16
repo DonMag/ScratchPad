@@ -31,6 +31,14 @@
 	_sortedCountriesList = [cMgr getCountries];
 	_sectionsDictionary = [self fillingDictionary:_sortedCountriesList];
 	
+	_tapCount = 1;
+	
+	_tmpImage = [UIImage imageNamed:@"Icon-83.5"];
+	_tmpIV = [[UIImageView alloc] initWithImage:_tmpImage];
+	
+	_watchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+	_watchView.backgroundColor = [UIColor blueColor];
+	
 }
 
 -(NSMutableDictionary *)fillingDictionary:(NSArray *)ary
@@ -100,6 +108,34 @@
 	[cell.textLabel setText:cellTitle];
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	_tapCount++;
+	
+	
+	_tmpImage = [UIImage imageNamed:@"swiftRed256"];
+	_tmpIV = [[UIImageView alloc] initWithImage:_tmpImage];
+
+	
+	NSInteger r = indexPath.row;
+	
+	r = _watchView.bounds.size.height;
+	
+	CGRect f = _watchView.frame;
+	
+	f.size.height = 150;
+	
+	_watchView = nil;
+	
+	_watchView = [[UIView alloc] initWithFrame:f];
+	
+	//_watchView.frame = f;
+	
+	r = _watchView.bounds.size.height;
+	
+	r += 1;
 }
 
 #if 1

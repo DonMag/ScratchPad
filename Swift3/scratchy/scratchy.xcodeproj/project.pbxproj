@@ -14,6 +14,7 @@
 		7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F391E521C0C00CEC340 /* Assets.xcassets */; };
 		7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C205F3B1E521C0C00CEC340 /* LaunchScreen.storyboard */; };
 		7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */; };
+		7C3B699A1E7B2DE100AB0B6E /* ScratchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */; };
 		7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */; };
 		7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */; };
 		7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA2EF1E79C88800614651 /* MyPickerView.swift */; };
@@ -35,6 +36,7 @@
 		7C205F3C1E521C0C00CEC340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C205F3E1E521C0C00CEC340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWithTargetViewController.swift; sourceTree = "<group>"; };
+		7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchViewController.swift; sourceTree = "<group>"; };
 		7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableViewHeaderViewController.swift; sourceTree = "<group>"; };
 		7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		7C9DA2EF1E79C88800614651 /* MyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				7C5D49FF1E781348004DFE18 /* ShadowView */,
 				7C5D4A081E7820EC004DFE18 /* AutoSizeTableHeaderView */,
 				7C9DA2EF1E79C88800614651 /* MyPickerView.swift */,
+				7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3B699A1E7B2DE100AB0B6E /* ScratchViewController.swift in Sources */,
 				7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */,
 				7CE4E7CF1E770C1100A01F64 /* ShadowView.swift in Sources */,
 				7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */,

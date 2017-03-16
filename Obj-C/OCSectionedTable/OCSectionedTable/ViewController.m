@@ -9,10 +9,17 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *theTextField;
 
 @end
 
 @implementation ViewController
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+	
+	//textField.attributedText = NSAttributedString(string: "", attributes: [NSForegroundColorAttributeName : UIColor.white, NSParagraphStyleAttributeName : paraStyle, NSFontAttributeName : UIFont.init(name: "HelveticaNeue-Bold", size: 16)]);
+	
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

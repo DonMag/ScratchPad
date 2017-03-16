@@ -12,5 +12,10 @@
 
 @interface CountriesTableViewController : UITableViewController
 
+@property (strong, nonatomic) UIView *watchView;
+@property (nonatomic) NSUInteger tapCount;
+
+@property (strong, nonatomic) UIImage *tmpImage;
+@property (strong, nonatomic) UIImageView *tmpIV;
 
 @end

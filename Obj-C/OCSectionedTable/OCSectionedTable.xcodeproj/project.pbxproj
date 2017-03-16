@@ -19,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0BE5741E7B22FA00FC9094 /* CandyDecoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyDecoViewController.h; sourceTree = "<group>"; };
+		7C0BE5751E7B22FA00FC9094 /* CandyDecoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyDecoViewController.m; sourceTree = "<group>"; };
 		7C397D3E1E76C3DC00DEFD34 /* OCSectionedTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCSectionedTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C397D421E76C3DC00DEFD34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C397D441E76C3DC00DEFD34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +84,8 @@
 				7C397D5C1E76C7A300DEFD34 /* OriginalCountries.m */,
 				7C397D5E1E76CF1600DEFD34 /* CountryManager.h */,
 				7C397D5F1E76CF1600DEFD34 /* CountryManager.m */,
+				7C0BE5741E7B22FA00FC9094 /* CandyDecoViewController.h */,
+				7C0BE5751E7B22FA00FC9094 /* CandyDecoViewController.m */,
 			);
 			path = OCSectionedTable;
 			sourceTree = "<group>";
@@ -320,6 +324,7 @@
 				7C397D571E76C3DC00DEFD34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
