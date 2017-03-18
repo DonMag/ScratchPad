@@ -8,60 +8,41 @@
 
 import UIKit
 
-class ScratchViewController: UIViewController, UITextFieldDelegate {
-	
-	
-	@IBOutlet weak var theTextField: UITextField!
-
-	@IBOutlet weak var tfWithFont: UITextField!
-	
-	
-	func textFieldDidBeginEditing(_ textField: UITextField) {
-		
-		let paraStyle: NSParagraphStyle = NSParagraphStyle()
-		textField.typingAttributes = [NSForegroundColorAttributeName : UIColor.white, NSParagraphStyleAttributeName : paraStyle, NSFontAttributeName : UIFont.init(name: "HelveticaNeue-Bold", size: 16)]
-
+extension UIView
+{
+	func copyView<T: UIView>() -> T {
+		return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
 	}
+}
+
+class ScratchViewController: UIViewController {
 	
-	func xtextFieldDidBeginEditing(_ textField: UITextField) {
-
-//		let font = UIFont(name: "Marker Felt Thin", size: 16)
-		
-		let font = tfWithFont.font?.withSize(22)
-
-		let paraStyle: NSParagraphStyle = NSParagraphStyle()
-		
-		
-//		let md = (textField.typingAttributes! as NSDictionary).mutableCopy() as! NSMutableDictionary
-//		let d : [String:Any] = [
-//			NSForegroundColorAttributeName:
-//				UIColor.red,
-//			NSUnderlineStyleAttributeName:
-//				NSUnderlineStyle.styleSingle.rawValue
-//		]
-//		md.addEntries(from:d)
-//		textField.typingAttributes = md.copy() as? [String:Any]
-
-		
-		
-		textField.typingAttributes =
-			[NSForegroundColorAttributeName : UIColor.red,
-			 NSParagraphStyleAttributeName : paraStyle,
-			 NSFontAttributeName : font];
-
-//		if let font = UIFont(name: "Raleway-SemiBold", size: 16) {
-//			let paraStyle: NSParagraphStyle = NSParagraphStyle()
-//			textField.attributedText = NSAttributedString(string: "", attributes: [NSForegroundColorAttributeName : UIColor.white, NSParagraphStyleAttributeName : paraStyle, NSFontAttributeName : font]);
-//			// do something with attributes
-//		} else {
-//			// The font "Raleway-SemiBold" is not found
-//		}
-	}
+	@IBOutlet weak var myHeaderView: UIView!
+	
+	@IBOutlet weak var tblA: UITableView!
+	@IBOutlet weak var tblB: UITableView!
+	
+	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		let h = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 32))
+		h.backgroundColor = UIColor.red
+		let l = UILabel(frame: h.bounds.insetBy(dx: 8.0, dy: 8.0))
+		l.text = "This is the header"
+		h.addSubview(l)
+		
+		tblB.tableHeaderView = h
+		
+		let v = myHeaderView.copyView()
+		
+		tblA.tableHeaderView = h.copyView()
+		
+		
+		
     }
 
     override func didReceiveMemoryWarning() {
