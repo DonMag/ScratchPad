@@ -23,6 +23,9 @@ class SpreadViewsViewController: UIViewController {
 	// width of round label
 	let xw: CGFloat = 32.0
 	
+	// max gap between round labels
+	let maxGap: CGFloat = 8.0
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,7 +75,7 @@ class SpreadViewsViewController: UIViewController {
 		
 		let sp:CGFloat = rw / CGFloat(numExecs > 1 ? numExecs - 1 : numExecs)
 		
-		let spacing = min(8, sp)
+		let spacing = min(maxGap, sp)
 		
 		theStackView.spacing = spacing
 		
