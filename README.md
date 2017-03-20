@@ -10,6 +10,8 @@ Note that I use this repo as kind of a "ScratchPad" -- some stuff will come and 
       - BetterButton - example of scaling font size in buttons
       - CameraWithTarget - overlay drawing on camera view
       - GridOfBoxes - constraints to maintain arrangement of boxes
+      - ShadowView - UIView subclass with shadow + sliding "footer view" + UIPageControl
+      - Table Header View - Autosizing table header view
 
  - Obj-C
     - ButtonsInScrollView - UIScrollView example project
