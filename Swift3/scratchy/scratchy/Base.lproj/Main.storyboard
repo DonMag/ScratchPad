@@ -320,6 +320,24 @@
             </objects>
             <point key="canvasLocation" x="3396" y="232.53373313343329"/>
         </scene>
+        <!--ClassA-->
+        <scene sceneID="tuW-7G-VRF">
+            <objects>
+                <viewController id="OZ1-Hv-SHR" customClass="classA" customModule="scratchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6jN-8A-LQj"/>
+                        <viewControllerLayoutGuide type="bottom" id="d4v-r3-KAq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mb1-fH-gr1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0aN-m1-iUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4090" y="120"/>
+        </scene>
         <!--Better Button View Controller-->
         <scene sceneID="Ngz-CR-Cj8">
             <objects>
@@ -706,6 +724,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="MNA-9e-mQH" kind="show" id="yqf-Gi-XA3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="2j1-hr-shJ" detailTextLabel="QbN-28-GDO" style="IBUITableViewCellStyleSubtitle" id="3qb-hb-yNz">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3qb-hb-yNz" id="58f-sI-MS3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ClassA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2j1-hr-shJ">
+                                                    <rect key="frame" x="15" y="4" width="53" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ClassB delegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QbN-28-GDO">
+                                                    <rect key="frame" x="15" y="25" width="92" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OZ1-Hv-SHR" kind="show" id="zW0-lr-dO7"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
