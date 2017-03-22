@@ -5,6 +5,8 @@ Misc work on individual tasks... kind of a "ScratchPad"
 Note that I use this repo as kind of a "ScratchPad" -- some stuff will come and go; some stuff will sorta work; some stuff won't work at all. Much of it is done as exercises or to help out someone else.
 
  - Swift3
+    - CustomBarButton project
+      - two methods of creating custom UIBarButtons, and how to get them to call-back to specific functions
     - SpreadingViews project
       - example of using UIStackView to spread variable number of subviews with varying spacing
     - scratchy project
