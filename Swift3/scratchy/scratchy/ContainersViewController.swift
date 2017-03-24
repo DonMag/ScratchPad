@@ -1,48 +1,39 @@
 //
-//  ScratchViewController.swift
+//  ContainersViewController.swift
 //  scratchy
 //
-//  Created by Don Mag on 3/16/17.
+//  Created by Don Mag on 3/24/17.
 //  Copyright © 2017 DonMag. All rights reserved.
 //
 
 import UIKit
 
-extension UIView
-{
-	func copyView<T: UIView>() -> T {
-		return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
-	}
-}
+class ContainersViewController: UIViewController {
 
-class ScratchViewController: UIViewController {
-	
-	@IBOutlet weak var myHeaderView: UIView!
-	
-	@IBOutlet weak var tblA: UITableView!
-	@IBOutlet weak var tblB: UITableView!
+	@IBOutlet weak var mapContainer: UIView!
+	@IBOutlet weak var tableContainer: UIView!
 	
 	
+	@IBAction func showContainer(_ sender: UISegmentedControl) {
+		if sender.selectedSegmentIndex == 0 {
+			UIView.animate(withDuration: 0.5, animations: {
+				self.tableContainer.alpha = 1
+				self.mapContainer.alpha = 0
+			})
+			
+		}else {
+			UIView.animate(withDuration: 0.5, animations: {
+				self.tableContainer.alpha = 0
+				self.mapContainer.alpha = 1
+			})
+		}
+		
+	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		
-		let h = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 32))
-		h.backgroundColor = UIColor.red
-		let l = UILabel(frame: h.bounds.insetBy(dx: 8.0, dy: 8.0))
-		l.text = "This is the header"
-		h.addSubview(l)
-		
-		tblB.tableHeaderView = h
-		
-		let v = myHeaderView.copyView()
-		
-		tblA.tableHeaderView = h.copyView()
-		
-		
-		
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,7 +53,3 @@ class ScratchViewController: UIViewController {
     */
 
 }
-
-
-
-

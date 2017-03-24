@@ -154,7 +154,7 @@
                                         <rect key="frame" x="0.0" y="312" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RIK-My-b4i" id="kkS-5T-3GV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -320,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="3396" y="232.53373313343329"/>
         </scene>
-        <!--ClassA-->
+        <!--Attrib Rounded Label View Controller-->
         <scene sceneID="tuW-7G-VRF">
             <objects>
-                <viewController id="OZ1-Hv-SHR" customClass="classA" customModule="scratchy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OZ1-Hv-SHR" customClass="AttribRoundedLabelViewController" customModule="scratchy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6jN-8A-LQj"/>
                         <viewControllerLayoutGuide type="bottom" id="d4v-r3-KAq"/>
@@ -331,8 +331,23 @@
                     <view key="view" contentMode="scaleToFill" id="Mb1-fH-gr1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-Vc-ot3">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zb3-Vc-ot3" firstAttribute="centerX" secondItem="Mb1-fH-gr1" secondAttribute="centerX" id="4ub-ga-dVE"/>
+                            <constraint firstItem="Zb3-Vc-ot3" firstAttribute="centerY" secondItem="Mb1-fH-gr1" secondAttribute="centerY" id="5Eb-E4-FMD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Zb3-Vc-ot3" id="dbK-vK-fuf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aN-m1-iUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -733,15 +748,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ClassA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2j1-hr-shJ">
-                                                    <rect key="frame" x="15" y="4" width="53" height="21"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attributed Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2j1-hr-shJ">
+                                                    <rect key="frame" x="15" y="4" width="123" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ClassB delegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QbN-28-GDO">
-                                                    <rect key="frame" x="15" y="25" width="92" height="15"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Label with Rounded Corners and Attrib text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QbN-28-GDO">
+                                                    <rect key="frame" x="15" y="25" width="245" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>

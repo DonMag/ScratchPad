@@ -159,7 +159,7 @@ line</string>
                                 </constraints>
                             </view>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="qZQ-vO-keW">
-                                <rect key="frame" x="140" y="235" width="94" height="29"/>
+                                <rect key="frame" x="140.5" y="235" width="94" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="stepChanged:" destination="gms-5c-M9c" eventType="valueChanged" id="hrf-65-kZl"/>
