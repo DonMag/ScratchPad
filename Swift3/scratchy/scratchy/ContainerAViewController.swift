@@ -10,10 +10,18 @@ import UIKit
 
 class ContainerAViewController: UIViewController {
 
+	@IBOutlet weak var theLabel: UILabel!
+	
+	var caString: String?
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+		if let t = caString {
+			theLabel.text = t
+		}
     }
 
     override func didReceiveMemoryWarning() {

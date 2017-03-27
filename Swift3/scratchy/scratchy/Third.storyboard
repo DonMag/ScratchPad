@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" constant="240" id="de8-DP-pym"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="msc-gW-2S1" kind="embed" id="wne-Xl-E5i"/>
+                                    <segue destination="msc-gW-2S1" kind="embed" identifier="segToA" id="wne-Xl-E5i"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-wL-QpZ">
@@ -40,11 +40,11 @@
                                     <constraint firstAttribute="width" constant="240" id="hpK-Lt-NPc"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="r31-MD-rxN" kind="embed" id="Yaa-yw-UVn"/>
+                                    <segue destination="r31-MD-rxN" kind="embed" identifier="segToB" id="Yaa-yw-UVn"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-sB-qc1">
-                                <rect key="frame" x="127" y="40" width="121" height="29"/>
+                                <rect key="frame" x="127" y="84" width="121" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -98,6 +98,9 @@
                             <constraint firstItem="Ja2-6z-enw" firstAttribute="centerX" secondItem="DdW-p5-qOR" secondAttribute="centerX" id="psz-QI-YeO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="Ja2-6z-enw" id="vW8-Xp-34L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iO-JW-qo4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +131,9 @@
                             <constraint firstItem="b0I-lH-dVq" firstAttribute="centerX" secondItem="fXb-vL-1tm" secondAttribute="centerX" id="iY2-Zl-e1t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="b0I-lH-dVq" id="pbA-mh-q2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkf-ZX-5Pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
