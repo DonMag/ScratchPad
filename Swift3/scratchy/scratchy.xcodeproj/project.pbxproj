@@ -19,6 +19,10 @@
 		7C2A3DF21E805F4B0066676D /* SpreadViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A3DF11E805F4B0066676D /* SpreadViewsViewController.swift */; };
 		7C2A3DF41E80691A0066676D /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A3DF31E80691A0066676D /* RoundLabel.swift */; };
 		7C3B699A1E7B2DE100AB0B6E /* ScratchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */; };
+		7C4AD8FC1E8AD3F900537B1A /* directory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C4AD8FB1E8AD3F900537B1A /* directory.plist */; };
+		7C4AD8FE1E8AD5DF00537B1A /* CheckPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AD8FD1E8AD5DF00537B1A /* CheckPListViewController.swift */; };
+		7C4AD9081E8B015100537B1A /* PListATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AD9071E8B015100537B1A /* PListATableViewController.swift */; };
+		7C4AD90A1E8B016300537B1A /* PListBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AD9091E8B016300537B1A /* PListBTableViewController.swift */; };
 		7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */; };
 		7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */; };
 		7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA2EF1E79C88800614651 /* MyPickerView.swift */; };
@@ -51,6 +55,10 @@
 		7C2A3DF11E805F4B0066676D /* SpreadViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadViewsViewController.swift; sourceTree = "<group>"; };
 		7C2A3DF31E80691A0066676D /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
 		7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchViewController.swift; sourceTree = "<group>"; };
+		7C4AD8FB1E8AD3F900537B1A /* directory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = directory.plist; sourceTree = "<group>"; };
+		7C4AD8FD1E8AD5DF00537B1A /* CheckPListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPListViewController.swift; sourceTree = "<group>"; };
+		7C4AD9071E8B015100537B1A /* PListATableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListATableViewController.swift; sourceTree = "<group>"; };
+		7C4AD9091E8B016300537B1A /* PListBTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListBTableViewController.swift; sourceTree = "<group>"; };
 		7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableViewHeaderViewController.swift; sourceTree = "<group>"; };
 		7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		7C9DA2EF1E79C88800614651 /* MyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 				7CD1454F1E83FCCC005BFF6F /* AttribRoundedLabelViewController.swift */,
 				7CCADA741E85785500C92473 /* ThirdMainViewController.swift */,
 				7CF3DD131E8581830057A54C /* Containers */,
+				7C4AD8FB1E8AD3F900537B1A /* directory.plist */,
+				7C4AD8FD1E8AD5DF00537B1A /* CheckPListViewController.swift */,
+				7C4AD9071E8B015100537B1A /* PListATableViewController.swift */,
+				7C4AD9091E8B016300537B1A /* PListBTableViewController.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -243,6 +255,7 @@
 				68A22D881E7EC961005DB1EF /* Second.storyboard in Resources */,
 				7CCADA731E85783000C92473 /* Third.storyboard in Resources */,
 				7C205F381E521C0C00CEC340 /* Main.storyboard in Resources */,
+				7C4AD8FC1E8AD3F900537B1A /* directory.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 				7C2A3DF41E80691A0066676D /* RoundLabel.swift in Sources */,
 				7CD145501E83FCCC005BFF6F /* AttribRoundedLabelViewController.swift in Sources */,
 				7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */,
+				7C4AD9081E8B015100537B1A /* PListATableViewController.swift in Sources */,
 				7C205F331E521C0C00CEC340 /* AppDelegate.swift in Sources */,
 				7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */,
 				7CCADA791E85788200C92473 /* ContainerBViewController.swift in Sources */,
@@ -273,7 +287,9 @@
 				7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */,
 				68A22D8A1E7EE865005DB1EF /* ScratchSB2ViewController.swift in Sources */,
 				7CD27CFA1E686DD900B7FD2D /* BetterButtonViewController.swift in Sources */,
+				7C4AD8FE1E8AD5DF00537B1A /* CheckPListViewController.swift in Sources */,
 				7CD27CF81E686D8C00B7FD2D /* BetterButton.swift in Sources */,
+				7C4AD90A1E8B016300537B1A /* PListBTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

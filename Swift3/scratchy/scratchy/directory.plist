@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Position</key>
+		<string>Operator</string>
+		<key>Name</key>
+		<string>John Smith</string>
+		<key>Details</key>
+		<array>
+			<dict>
+				<key>Functionary</key>
+				<string>Martin</string>
+				<key>ImageFace</key>
+				<string>face1</string>
+				<key>Phone</key>
+				<string>123-456-7891</string>
+			</dict>
+			<dict>
+				<key>Functionary</key>
+				<string>Steve</string>
+				<key>ImageFace</key>
+				<string>face2</string>
+				<key>Phone</key>
+				<string>123-456-7892</string>
+			</dict>
+			<dict>
+				<key>Functionary</key>
+				<string>Tim</string>
+				<key>ImageFace</key>
+				<string>face3</string>
+				<key>Phone</key>
+				<string>123-456-7893</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Position</key>
+		<string>Sales Person</string>
+		<key>Name</key>
+		<string>Suzan Brown</string>
+		<key>Details</key>
+		<array>
+			<dict>
+				<key>Functionary</key>
+				<string>Laura</string>
+				<key>ImageFace</key>
+				<string>face4</string>
+				<key>Phone</key>
+				<string>123-456-7894</string>
+			</dict>
+			<dict>
+				<key>Functionary</key>
+				<string>Chris</string>
+				<key>ImageFace</key>
+				<string>face5</string>
+				<key>Phone</key>
+				<string>123-456-7895</string>
+			</dict>
+			<dict>
+				<key>Functionary</key>
+				<string>Benet</string>
+				<key>ImageFace</key>
+				<string>face6</string>
+				<key>Phone</key>
+				<string>123-456-7896</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
