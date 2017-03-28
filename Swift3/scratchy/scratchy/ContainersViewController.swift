@@ -16,6 +16,26 @@ class ContainersViewController: UIViewController {
 	var vcA: ContainerAViewController?
 	var vcB: ContainerBViewController?
 	
+	
+	let titleLabel: UILabel = {
+		let label = UILabel()
+		label.textAlignment = .center
+		label.translatesAutoresizingMaskIntoConstraints = false
+		label.backgroundColor = .clear
+		label.layer.masksToBounds = true
+		label.numberOfLines = 0
+		label.lineBreakMode = NSLineBreakMode.byWordWrapping
+		label.textColor = .white
+		return label
+	}()
+	
+	var titleLabelText: String? {
+		didSet {
+			titleLabel.text = titleLabelText
+			titleLabel.layoutIfNeeded()
+		}
+	}
+	
 	@IBAction func showContainer(_ sender: UISegmentedControl) {
 		
 		print(vcA?.theLabel.text ?? "Missing A")
@@ -40,6 +60,12 @@ class ContainersViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		titleLabel.text = "This is text"
+		self.view.addSubview(titleLabel)
+		titleLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+		titleLabel.topAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100.0 ).isActive = true
+		
     }
 
     override func didReceiveMemoryWarning() {
