@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Default'/>
+        <page name='Rotate Image'/>
+        <page name='Untitled Page 3'/>
+        <page name='bViewBorder'/>
+        <page name='Untitled Page 4'/>
+        <page name='MikeD Searching SW3'/>
+        <page name='JSON'/>
+        <page name='more Dates'/>
+        <page name='taz http'/>
+        <page name='shuffle'/>
+        <page name='strings'/>
+        <page name='strings2'/>
+        <page name='recursive'/>
+        <page name='Arrays'/>
+        <page name='ArraySorting'/>
+        <page name='switchy'/>
+        <page name='StackViewCOnstraints'/>
+        <page name='URLSession'/>
+        <page name='AddButtons'/>
+        <page name='PointOnLine'/>
+        <page name='ImageSizing'/>
+        <page name='ButtonAnim'/>
+        <page name='BezierImageMask'/>
+        <page name='better border'/>
+        <page name='4part border'/>
+        <page name='uiview subclass border'/>
+        <page name='Text On Image'/>
+        <page name='Animate Mask'/>
+        <page name='PieWedges'/>
+        <page name='Pie2'/>
+        <page name='Image Scale'/>
+        <page name='Analog Gauge'/>
+        <page name='Delegate Test'/>
+        <page name='Clip Image'/>
+        <page name='AttribText'/>
+        <page name='Marching Ants'/>
+        <page name='PageViewController'/>
+        <page name='PageVC2'/>
+        <page name='UsingVC'/>
+        <page name='CollectionView'/>
+    </pages>
+</playground>
