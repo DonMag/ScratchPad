@@ -17,5 +17,8 @@ var componentsNow = calendar.dateComponents([.year, .month, .day, .hour, .minute
 let month = componentsNow.month
 
 print(month ?? "X")
+
+let n = "7E392C50-9E1D-494A-AE0F-1BA08B18D977".characters.count
+
 PlaygroundPage.current.liveView = container
 //PlaygroundPage.current.needsIndefiniteExecution = true

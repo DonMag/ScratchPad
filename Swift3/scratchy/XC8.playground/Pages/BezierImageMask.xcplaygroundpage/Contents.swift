@@ -3,46 +3,6 @@
 import UIKit
 import PlaygroundSupport
 
-var screenSize = CGSize(width: 600, height: 600)
-
-let containerView = UIView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
-containerView.backgroundColor = UIColor.orange
-
-
-class curvedBottomView: UIView  {
-	
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		self.doInit()
-	}
-	
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-		self.doInit()
-	}
-	
-	func doInit() -> Void {
-		
-		let rect = self.bounds
-		let y:CGFloat = rect.size.height - 20
-		let curveTo:CGFloat = rect.size.height
-		
-		let myBezier = UIBezierPath()
-		myBezier.move(to: CGPoint(x: 0, y: y))
-		myBezier.addQuadCurve(to: CGPoint(x: rect.width, y: y), controlPoint: CGPoint(x: rect.width / 2, y: curveTo))
-		myBezier.addLine(to: CGPoint(x: rect.width, y: 0))
-		myBezier.addLine(to: CGPoint(x: 0, y: 0))
-		myBezier.close()
-		
-		let maskForPath = CAShapeLayer()
-		maskForPath.path = myBezier.cgPath
-		layer.mask = maskForPath
-		
-	}
-
-	
-}
-
 extension Int {
 	var degreesToRadians: Double { return Double(self) * .pi / 180 }
 }
@@ -53,10 +13,30 @@ extension FloatingPoint {
 
 class VariableCornerRadiusView: UIView  {
 	
-	var upperLeftCornerRadius:CGFloat = 0
-	var upperRightCornerRadius:CGFloat = 0
-	var lowerLeftCornerRadius:CGFloat = 0
-	var lowerRightCornerRadius:CGFloat = 0
+	var upperLeftCornerRadius:CGFloat = 0 {
+		didSet {
+			self.setNeedsLayout()
+		}
+	}
+
+	var upperRightCornerRadius:CGFloat = 0 {
+		didSet {
+			self.setNeedsLayout()
+		}
+	}
+
+	var lowerLeftCornerRadius:CGFloat = 0 {
+		didSet {
+			self.setNeedsLayout()
+		}
+	}
+
+	var lowerRightCornerRadius:CGFloat = 0 {
+		didSet {
+			self.setNeedsLayout()
+		}
+	}
+
 
 	func layoutMask() -> Void {
 		
@@ -119,19 +99,83 @@ class VariableCornerRadiusView: UIView  {
 
 	override func layoutSubviews() {
 		super.layoutSubviews()
-		
 		self.layoutMask()
-
 	}
 	
 }
+
+var testSize = CGSize(width: 200, height: 200)
+
+// set up an orange view to hold it...
+let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 260))
+
+containerView.backgroundColor = UIColor.orange
+
+// create a VariableCornerRadiusView, just a little smaller than the container view
+let TestView = VariableCornerRadiusView(frame: containerView.bounds.insetBy(dx: 20, dy: 20))
+
+// set different radius for each corner
+TestView.upperLeftCornerRadius = 20.0
+TestView.upperRightCornerRadius = 40.0
+TestView.lowerRightCornerRadius = 60.0
+TestView.lowerLeftCornerRadius = 80.0
+
+// give it a blue background
+TestView.backgroundColor = UIColor.blue
+
+// add it to the container
+containerView.addSubview(TestView)
+
+// show it
+PlaygroundPage.current.liveView = containerView
+
+
+
+
+
+
+class curvedBottomView: UIView  {
+	
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		self.doInit()
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		self.doInit()
+	}
+	
+	func doInit() -> Void {
+		
+		let rect = self.bounds
+		let y:CGFloat = rect.size.height - 20
+		let curveTo:CGFloat = rect.size.height
+		
+		let myBezier = UIBezierPath()
+		myBezier.move(to: CGPoint(x: 0, y: y))
+		myBezier.addQuadCurve(to: CGPoint(x: rect.width, y: y), controlPoint: CGPoint(x: rect.width / 2, y: curveTo))
+		myBezier.addLine(to: CGPoint(x: rect.width, y: 0))
+		myBezier.addLine(to: CGPoint(x: 0, y: 0))
+		myBezier.close()
+		
+		let maskForPath = CAShapeLayer()
+		maskForPath.path = myBezier.cgPath
+		layer.mask = maskForPath
+		
+	}
+	
+	
+}
+
+
+/*
+var targetFrame = CGRect(x: 40, y: 40, width: 300, height: 300)
 
 
 let sampleImage = UIImage(named: "swiftBlue.png")
 let imgView = UIImageView(image: sampleImage)
 let imgView2 = UIImageView(image: sampleImage)
-
-var targetFrame = CGRect(x: 40, y: 40, width: 300, height: 300)
 
 let cbView = curvedBottomView(frame: targetFrame)
 cbView.clipsToBounds = true
@@ -146,17 +190,22 @@ let imgG = UIImage(named: "swiftGreen.png")
 targetFrame.origin.x = 200
 targetFrame.origin.y = 200
 
-let vcrView = VariableCornerRadiusView(frame: targetFrame)
-vcrView.backgroundColor = UIColor.red
+	let vcrView = VariableCornerRadiusView(frame: targetFrame)
+	vcrView.backgroundColor = UIColor.red
+	
+	vcrView.upperLeftCornerRadius = 64.0
+	vcrView.upperRightCornerRadius = 40.0
+	vcrView.lowerLeftCornerRadius = 32.0
+	vcrView.lowerRightCornerRadius = 80.0
 
-vcrView.upperLeftCornerRadius = 24.0
-vcrView.upperRightCornerRadius = 40.0
-vcrView.lowerLeftCornerRadius = 32.0
-vcrView.lowerRightCornerRadius = 80.0
+//vcrView.setNeedsLayout()
+
+//	containerView.addSubview(vcrView)
+	
 
 let imgViewG = UIImageView(image: imgG)
 imgViewG.frame = vcrView.bounds
-vcrView.addSubview(imgViewG)
+//vcrView.addSubview(imgViewG)
 
 
 let v = UIView(frame: targetFrame)
@@ -170,17 +219,17 @@ if 1 == 2 {
 
 	containerView.addSubview(v)
 } else {
-	containerView.addSubview(v)
+//	containerView.addSubview(v)
 	
 	containerView.addSubview(vcrView)
 }
 
 
 
-
 PlaygroundPage.current.liveView = containerView
 //PlaygroundPage.current.needsIndefiniteExecution = true
 
+*/
 
 
 
