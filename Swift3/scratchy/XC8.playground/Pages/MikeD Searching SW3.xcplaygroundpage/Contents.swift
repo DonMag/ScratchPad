@@ -165,3 +165,128 @@ if let rv = findPeopleMatching(word1: word1, word2: word2, inArray: inArray) {
 print("\n\n end")
 
 
+class MyFirstConnection {
+	var information: NSMutableArray?
+}
+
+var names = NSMutableArray(array: ["Joe", "Jim", "John", "Joseph", "Jason"])
+var mix = NSMutableArray(array: ["Joe", "Jim", 96, "John", "Joseph", "Jason"])
+//var names = ["Joe", "Jim", "Jason"]
+
+var myfirstconnection = MyFirstConnection()
+myfirstconnection.information = names
+
+var myseconnection = MyFirstConnection()
+myseconnection.information = mix
+
+var pref = "Ja"
+
+var idx = names.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+	return (ob as! String).hasPrefix(pref)
+}
+print("A hmmm", idx)
+
+idx = names.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+	return (ob as! String).hasPrefix(pref)
+}
+print("B hmmm", idx)
+
+
+if let iidx = (myseconnection.information?.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+	print(i)
+	if let strOB = ob as? String {
+		return strOB.hasPrefix(pref)
+	}
+	return false
+	})
+{
+	print("C2 hmmm", iidx)
+	print("nf? ", iidx == NSNotFound)
+}
+
+idx = (myfirstconnection.information?.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+	return (ob as! String).hasPrefix(pref)
+	})!
+print("C hmmm", idx)
+
+if let theNames = myfirstconnection.information as? [String] {
+	
+	if let index = theNames.index(where: { $0.hasPrefix(pref) }) {
+		print("y The first name starting with \(pref) was found at \(index)")
+	}
+	else {
+		print("No names were found that start with \(pref)")
+	}
+
+}
+
+		if let index = ((myfirstconnection.information) as! [String]).index(where: { $0.hasPrefix(pref) }) {
+			print("X The first name starting with \(pref) was found at \(index)")
+		}
+		else {
+			print("No names were found that start with \(pref)")
+		}
+
+
+//idx = myfirstconnection.information?.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+//	return (ob as! String).hasPrefix(pref)
+//}
+//print("C hmmm", idx)
+//
+
+//if let nms = names as? [String] {
+//	
+//	if let index = nms.index(where: { $0.hasPrefix(pref) }) {
+//		print("The first name starting with \(pref) was found at \(index)")
+//	}
+//	else {
+//		print("No names were found that start with \(pref)")
+//	}
+//
+//} else {
+//	
+//	if let nms = names as? NSMutableArray {
+//	
+//		let idx = nms.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+//			return (ob as! String).hasPrefix(pref)
+//		}
+//		print(idx)
+//	
+//	}
+//	
+//}
+//
+
+//if names iskindofclass NSMutableArray {
+//
+//let idx = names.indexOfObject(passingTest:) { (ob, i, b) -> Bool in
+//	return (ob as! String).hasPrefix(pref)
+//}
+//print(idx)
+//
+//} else {
+//	
+//
+//if let index = names.index(where: { $0.hasPrefix(pref) }) {
+//	print("The first name starting with \(pref) was found at \(index)")
+//}
+//else {
+//	print("No names were found that start with \(pref)")
+//}
+//
+//}
+
+//let idx = names.indexOfObject(passingTest: (ob, index, Bool), in
+//	return (ob as! String) == "Joe"
+//)
+
+//let n = names.indexesOfObjects(passingTest: <#T##(Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool#>)
+//
+//let index = names.index(where: { (item) -> Bool in
+//	(item as String).hasPrefix(pref)
+//})
+
+
+//let index = cells.index(where: { (item) -> Bool in
+//	item.foo == 42 // test if this is the item you're looking for
+//})

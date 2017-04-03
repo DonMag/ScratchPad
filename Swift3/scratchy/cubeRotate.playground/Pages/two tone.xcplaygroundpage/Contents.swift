@@ -59,11 +59,11 @@ func boundedImage(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
 	
 }
 
-func maskImage(image:UIImage, mask:(UIImage)) -> UIImage? {
+func maskImage(image:UIImage, mask:UIImage) -> UIImage? {
 	
 	if let imageReference = image.cgImage {
 		if let maskReference = mask.cgImage {
-
+			
 			let imageMask = CGImage(
 				maskWidth: maskReference.width,
 				height: maskReference.height,
@@ -74,26 +74,15 @@ func maskImage(image:UIImage, mask:(UIImage)) -> UIImage? {
 				decode: nil,
 				shouldInterpolate: true)
 			
-
-//	let imageMask = CGImageMaskCreate(
-//		maskReference.width,
-//	                                  maskReference.height,
-//	                                  maskReference.bitsPerComponent,
-//	                                  maskReference.bitsPerPixel,
-//	                                  maskReference.bytesPerRow,
-//	                                  maskReference.dataProvider!, nil, true)
-	
-//			let maskedReference = CGImageCreateWithMask(imageReference, imageMask)
-
 			let maskedReference = imageReference.masking(imageMask!)
+			
+			let maskedImage = UIImage(cgImage:maskedReference!)
+			
+			return maskedImage
+			
+		}
+	}
 	
-	let maskedImage = UIImage(cgImage:maskedReference!)
-
-		return maskedImage
-
-	}
-	}
-
 	return nil
 }
 

@@ -40,7 +40,7 @@
         <page name='PageViewController'/>
         <page name='PageVC2'/>
         <page name='UsingVC'/>
-        <page name='Slider'/>
         <page name='CollectionView'/>
+        <page name='NewSlider'/>
     </pages>
 </playground>
