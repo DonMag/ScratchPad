@@ -294,7 +294,7 @@ cView.addSubview(iv2)
 targImage = UIImage(named: "car")
 drop = UIImage(named: "bwDrop")
 
-var whiteRect = UIImage(color: .black, size: (drop?.size)!)
+var whiteRect = UIImage(color: .white, size: (drop?.size)!)
 var invertMask = createInvertMask(mask: drop!, image: whiteRect!)
 
 w = (drop?.size.width)! + 0 // * 1.01
@@ -318,6 +318,37 @@ iv3.frame.origin.y = 380
 //iv3.layer.mask = maskLayer
 
 cView.addSubview(iv3)
+
+
+drop = UIImage(named: "iconOutline")
+var wImg = UIImage(color: UIColor.black, size: (drop?.size)!)
+var wV = UIImageView(image: wImg)
+var mV = UIImageView(image: drop)
+wV.mask = mV
+
+wV.frame.origin.x = 260
+wV.frame.origin.y = 380
+
+wV.frame.size.width = 300
+
+var r = wV.bounds.insetBy(dx: 40, dy: 10)
+
+
+wV.mask?.frame = r //wV.bounds
+cView.addSubview(wV)
+
+
+UIGraphicsBeginImageContext(wV.bounds.size);
+//wV.layer.render(in: UIGraphicsGetCurrentContext()!)
+wV.drawHierarchy(in: wV.bounds, afterScreenUpdates: true)
+
+var screenShot = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+//
+var scView = UIImageView(image: screenShot)
+//scView.mask = mV
+
+
 
 
 //	- (UIImage*) createInvertMask:(UIImage *)maskImage withTargetImage:(UIImage *) image {
