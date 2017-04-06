@@ -41,7 +41,7 @@ class KBNoAutoScrollViewController: UIViewController, UITableViewDelegate, UITab
 		
 		// Configure the cell...
 		
-		cell.theTextField.text = "\(indexPath)"
+		cell.theTextField.text = "\(indexPath) along with some text to get me started"
 		
 		return cell
 	}

@@ -42,5 +42,7 @@
         <page name='UsingVC'/>
         <page name='CollectionView'/>
         <page name='NewSlider'/>
+        <page name='Table2'/>
+        <page name='FilterMap'/>
     </pages>
 </playground>
