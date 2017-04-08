@@ -28,13 +28,13 @@ class ClassAC: UIViewController, ClassCDelegate {
 		
 	}
 	
-	func PressedButtonForMethodAC() {
+	func PressedButtonForMethodAC(theSender: classC) {
 		NSLog("Method AC in Class AC fired!")
 	}
 }
 
 protocol ClassCDelegate {
-	func PressedButtonForMethodAC()
+	func PressedButtonForMethodAC(theSender: classC)
 }
 
 class classC: UIBarButtonItem {
@@ -70,7 +70,7 @@ class classC: UIBarButtonItem {
 	
 	func classCTap() {
 		NSLog("tap inside ClassC ... call back to delegate method")
-		delegate?.PressedButtonForMethodAC()
+		delegate?.PressedButtonForMethodAC(theSender: self)
 	}
 	
 }

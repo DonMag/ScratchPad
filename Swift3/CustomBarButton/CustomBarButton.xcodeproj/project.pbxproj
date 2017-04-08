@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685A6F4A1E985161009A3206 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F491E985161009A3206 /* TestTableViewController.swift */; };
+		685A6F4C1E985C09009A3206 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F4B1E985C09009A3206 /* DemoTableViewCell.swift */; };
+		685A6F4E1E985C55009A3206 /* ItemRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F4D1E985C55009A3206 /* ItemRowCell.swift */; };
 		7C5202C21E82A14B00EB8A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5202C11E82A14B00EB8A1D /* AppDelegate.swift */; };
 		7C5202C41E82A14B00EB8A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5202C31E82A14B00EB8A1D /* ViewController.swift */; };
 		7C5202C71E82A14B00EB8A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5202C51E82A14B00EB8A1D /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		685A6F491E985161009A3206 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		685A6F4B1E985C09009A3206 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		685A6F4D1E985C55009A3206 /* ItemRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRowCell.swift; sourceTree = "<group>"; };
 		7C5202BE1E82A14B00EB8A1D /* CustomBarButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomBarButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5202C11E82A14B00EB8A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5202C31E82A14B00EB8A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				7C5202CD1E82A14B00EB8A1D /* Info.plist */,
 				7C5202D31E82A1C100EB8A1D /* ClassAB.swift */,
 				7C5202D51E82A1D100EB8A1D /* ClassAC.swift */,
+				685A6F491E985161009A3206 /* TestTableViewController.swift */,
+				685A6F4B1E985C09009A3206 /* DemoTableViewCell.swift */,
+				685A6F4D1E985C55009A3206 /* ItemRowCell.swift */,
 			);
 			path = CustomBarButton;
 			sourceTree = "<group>";
@@ -142,10 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685A6F4C1E985C09009A3206 /* DemoTableViewCell.swift in Sources */,
 				7C5202C41E82A14B00EB8A1D /* ViewController.swift in Sources */,
+				685A6F4A1E985161009A3206 /* TestTableViewController.swift in Sources */,
 				7C5202C21E82A14B00EB8A1D /* AppDelegate.swift in Sources */,
 				7C5202D61E82A1D100EB8A1D /* ClassAC.swift in Sources */,
 				7C5202D41E82A1C100EB8A1D /* ClassAB.swift in Sources */,
+				685A6F4E1E985C55009A3206 /* ItemRowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +319,7 @@
 				7C5202D21E82A14B00EB8A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
