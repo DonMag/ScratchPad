@@ -6,5 +6,6 @@
         <page name='two tone'/>
         <page name='mask2'/>
         <page name='mask3'/>
+        <page name='bez'/>
     </pages>
 </playground>
