@@ -21,25 +21,25 @@ class MyCustomView :UIView{
 		
 		var pth = UIBezierPath()
 		
-		var pt = CGPoint(x: 40, y: 100)
+		var pt = CGPoint(x: 40, y: 10)
 		
 		pth.move(to: pt)
 		
-		pt.x += 20
+		pt.x += 120
 		
 		pth.addLine(to: pt)
 		
-		pt.x += 40
-		pt.y += 50
+		pt.x += 140
+		pt.y += 150
 		
 		pth.addLine(to: pt)
 		
-		pt.x -= 10
-		pt.y += 40
+		pt.x -= 60
+		pt.y += 140
 		
 		pth.addLine(to: pt)
 		
-		pt.x -= 50
+		pt.x -= 150
 		
 		pth.addLine(to: pt)
 		
@@ -50,7 +50,7 @@ class MyCustomView :UIView{
 		
 		pth.lineWidth = 12
 		
-		pth.stroke()
+//		pth.stroke()
 		
 		
 		var sp = pth.cgPath.copy(strokingWithWidth: 10, lineCap: .square, lineJoin: .miter, miterLimit: 10)
@@ -58,6 +58,20 @@ class MyCustomView :UIView{
 		
 		
 		var spp = UIBezierPath(cgPath: sp)
+		
+		let combined = UIBezierPath()
+		combined.append(pth)
+		combined.append(spp)
+		
+		combined.close()
+		
+		combined.usesEvenOddFillRule = false
+
+		
+		//var upth = pth.fb_union(spp)
+		
+//		combined.fill()
+//		combined.stroke()
 		
 		spp.fill()
 		
