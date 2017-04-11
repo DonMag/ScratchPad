@@ -42,6 +42,7 @@
 		7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEF5F5B1E648C02005A5E88 /* SampleView.xib */; };
 		7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF5F631E64A4D9005A5E88 /* SampleView.swift */; };
 		7CF3DD121E85816C0057A54C /* ContainersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3DD111E85816C0057A54C /* ContainersViewController.swift */; };
+		7CF9D3621E9D80FA00098717 /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF9D3611E9D80FA00098717 /* Fourth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		7CEF5F5B1E648C02005A5E88 /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		7CEF5F631E64A4D9005A5E88 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		7CF3DD111E85816C0057A54C /* ContainersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainersViewController.swift; sourceTree = "<group>"; };
+		7CF9D3611E9D80FA00098717 /* Fourth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Fourth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				685A6F591E9980D6009A3206 /* SearchMapViewController.swift */,
 				685A6F5B1E99830D009A3206 /* InterestPViewController.swift */,
 				685A6F5D1E9986FF009A3206 /* BaseViewController.swift */,
+				7CF9D3611E9D80FA00098717 /* Fourth.storyboard */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF9D3621E9D80FA00098717 /* Fourth.storyboard in Resources */,
 				7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */,
 				7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */,
 				7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */,
