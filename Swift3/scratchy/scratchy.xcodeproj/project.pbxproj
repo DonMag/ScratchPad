@@ -29,6 +29,8 @@
 		7C3B699A1E7B2DE100AB0B6E /* ScratchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */; };
 		7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */; };
 		7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */; };
+		7C94A1EC1E9E54F6009DB5A3 /* TwoColTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A1EB1E9E54F6009DB5A3 /* TwoColTableViewController.swift */; };
+		7C94A1EE1E9E5508009DB5A3 /* TwoColTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A1ED1E9E5508009DB5A3 /* TwoColTableViewCell.swift */; };
 		7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA2EF1E79C88800614651 /* MyPickerView.swift */; };
 		7CCADA731E85783000C92473 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCADA721E85783000C92473 /* Third.storyboard */; };
 		7CCADA751E85785500C92473 /* ThirdMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCADA741E85785500C92473 /* ThirdMainViewController.swift */; };
@@ -70,6 +72,8 @@
 		7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchViewController.swift; sourceTree = "<group>"; };
 		7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableViewHeaderViewController.swift; sourceTree = "<group>"; };
 		7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		7C94A1EB1E9E54F6009DB5A3 /* TwoColTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColTableViewController.swift; sourceTree = "<group>"; };
+		7C94A1ED1E9E5508009DB5A3 /* TwoColTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColTableViewCell.swift; sourceTree = "<group>"; };
 		7C9DA2EF1E79C88800614651 /* MyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
 		7CCADA721E85783000C92473 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		7CCADA741E85785500C92473 /* ThirdMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMainViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				7C205F361E521C0C00CEC340 /* Main.storyboard */,
 				68A22D871E7EC961005DB1EF /* Second.storyboard */,
 				7CCADA721E85783000C92473 /* Third.storyboard */,
+				7CF9D3611E9D80FA00098717 /* Fourth.storyboard */,
 				7C205F391E521C0C00CEC340 /* Assets.xcassets */,
 				7C205F3B1E521C0C00CEC340 /* LaunchScreen.storyboard */,
 				7C205F3E1E521C0C00CEC340 /* Info.plist */,
@@ -141,10 +146,8 @@
 				685A6F4F1E993EB6009A3206 /* LayersViewController.swift */,
 				685A6F511E993EDE009A3206 /* LayersWork.xcassets */,
 				685A6F531E994762009A3206 /* LayeredIcon.swift */,
-				685A6F591E9980D6009A3206 /* SearchMapViewController.swift */,
-				685A6F5B1E99830D009A3206 /* InterestPViewController.swift */,
-				685A6F5D1E9986FF009A3206 /* BaseViewController.swift */,
-				7CF9D3611E9D80FA00098717 /* Fourth.storyboard */,
+				7C94A1F01E9E6A72009DB5A3 /* Subclass with Delegate */,
+				7C94A1EF1E9E6A1A009DB5A3 /* MultiCol Table Labels */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -193,6 +196,25 @@
 				7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */,
 			);
 			name = AutoSizeTableHeaderView;
+			sourceTree = "<group>";
+		};
+		7C94A1EF1E9E6A1A009DB5A3 /* MultiCol Table Labels */ = {
+			isa = PBXGroup;
+			children = (
+				7C94A1EB1E9E54F6009DB5A3 /* TwoColTableViewController.swift */,
+				7C94A1ED1E9E5508009DB5A3 /* TwoColTableViewCell.swift */,
+			);
+			name = "MultiCol Table Labels";
+			sourceTree = "<group>";
+		};
+		7C94A1F01E9E6A72009DB5A3 /* Subclass with Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				685A6F591E9980D6009A3206 /* SearchMapViewController.swift */,
+				685A6F5B1E99830D009A3206 /* InterestPViewController.swift */,
+				685A6F5D1E9986FF009A3206 /* BaseViewController.swift */,
+			);
+			name = "Subclass with Delegate";
 			sourceTree = "<group>";
 		};
 		7CF3DD131E8581830057A54C /* Containers */ = {
@@ -301,9 +323,11 @@
 				7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */,
 				68A22D3E1E7462B5005DB1EF /* GridOfBoxesViewController.swift in Sources */,
 				7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */,
+				7C94A1EE1E9E5508009DB5A3 /* TwoColTableViewCell.swift in Sources */,
 				7CE4E7CD1E770BDB00A01F64 /* ShadowedViewController.swift in Sources */,
 				7C2A3DF21E805F4B0066676D /* SpreadViewsViewController.swift in Sources */,
 				7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */,
+				7C94A1EC1E9E54F6009DB5A3 /* TwoColTableViewController.swift in Sources */,
 				685A6F501E993EB6009A3206 /* LayersViewController.swift in Sources */,
 				685A6F541E994762009A3206 /* LayeredIcon.swift in Sources */,
 				685A6F5A1E9980D6009A3206 /* SearchMapViewController.swift in Sources */,
