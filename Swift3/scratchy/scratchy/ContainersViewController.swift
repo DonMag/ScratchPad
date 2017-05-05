@@ -62,12 +62,14 @@ extension String {
 
 class ContainersViewController: UIViewController {
 
+	@IBOutlet weak var theSegControl: UISegmentedControl!
 	@IBOutlet weak var mapContainer: UIView!
 	@IBOutlet weak var tableContainer: UIView!
 	
 	var vcA: ContainerAViewController?
 	var vcB: ContainerBViewController?
 	
+	weak var currentViewController: UIViewController?
 	
 	let titleLabel: UILabel = {
 		let label = UILabel()
@@ -86,6 +88,49 @@ class ContainersViewController: UIViewController {
 			titleLabel.text = titleLabelText
 			titleLabel.layoutIfNeeded()
 		}
+	}
+	
+	func cycleFromViewController(oldViewController: UIViewController, toViewController newViewController: UIViewController) {
+		oldViewController.willMove(toParentViewController: nil)
+		self.addChildViewController(newViewController)
+		
+		newViewController.view.frame = tableContainer.bounds
+		
+		tableContainer.addSubview(newViewController.view)
+		
+		newViewController.view.alpha = 0
+		newViewController.view.layoutIfNeeded()
+		
+		UIView.animate(withDuration: 0.5, animations: {
+			newViewController.view.alpha = 1.0
+			oldViewController.view.alpha = 0.0
+		}, completion: { finished in
+			oldViewController.view.removeFromSuperview()
+			oldViewController.removeFromParentViewController()
+			newViewController.didMove(toParentViewController: self)
+		})
+
+	}
+	
+	func showContainerView(_ sender: UISegmentedControl) {
+		print(sender.selectedSegmentIndex)
+
+		if currentViewController == nil {
+			currentViewController = vcA
+		}
+		
+		if sender.selectedSegmentIndex == 0 {
+			let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "componentA")
+//			newViewController!.view.translatesAutoresizingMaskIntoConstraints = false
+			self.cycleFromViewController(oldViewController: self.currentViewController!, toViewController: newViewController!)
+			self.currentViewController = newViewController
+		} else {
+			let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "componentB")
+//			newViewController!.view.translatesAutoresizingMaskIntoConstraints = false
+			self.cycleFromViewController(oldViewController: self.currentViewController!, toViewController: newViewController!)
+			self.currentViewController = newViewController
+		}
+
 	}
 	
 	@IBAction func showContainer(_ sender: UISegmentedControl) {
@@ -117,7 +162,17 @@ class ContainersViewController: UIViewController {
 		self.view.addSubview(titleLabel)
 		titleLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
 		titleLabel.topAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100.0 ).isActive = true
-	
+
+		
+		let items = ["Providing Services", "Seeking Services"]
+		let mySegControl = UISegmentedControl(items: items)
+		
+		mySegControl.addTarget(self, action: #selector(ContainersViewController.showContainerView(_:)), for: .valueChanged)
+
+		mySegControl.selectedSegmentIndex = 0
+		mySegControl.frame = theSegControl.frame
+		mySegControl.frame.origin.x = 0
+		view.addSubview(mySegControl)
     }
 
     override func didReceiveMemoryWarning() {

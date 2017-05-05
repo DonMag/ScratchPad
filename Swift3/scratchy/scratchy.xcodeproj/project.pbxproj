@@ -26,6 +26,7 @@
 		7C27CE2A1E69A58F002C2957 /* CameraWithTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */; };
 		7C2A3DF21E805F4B0066676D /* SpreadViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A3DF11E805F4B0066676D /* SpreadViewsViewController.swift */; };
 		7C2A3DF41E80691A0066676D /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A3DF31E80691A0066676D /* RoundLabel.swift */; };
+		7C389CC71EBD1E44005F45D4 /* FitFillFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C389CC61EBD1E44005F45D4 /* FitFillFuncs.swift */; };
 		7C3B699A1E7B2DE100AB0B6E /* ScratchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */; };
 		7C5D4A031E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */; };
 		7C5D4A051E7816E8004DFE18 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */; };
@@ -69,6 +70,7 @@
 		7C27CE291E69A58F002C2957 /* CameraWithTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWithTargetViewController.swift; sourceTree = "<group>"; };
 		7C2A3DF11E805F4B0066676D /* SpreadViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadViewsViewController.swift; sourceTree = "<group>"; };
 		7C2A3DF31E80691A0066676D /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
+		7C389CC61EBD1E44005F45D4 /* FitFillFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitFillFuncs.swift; sourceTree = "<group>"; };
 		7C3B69991E7B2DE100AB0B6E /* ScratchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchViewController.swift; sourceTree = "<group>"; };
 		7C5D4A021E781540004DFE18 /* ViewWithTableViewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableViewHeaderViewController.swift; sourceTree = "<group>"; };
 		7C5D4A041E7816E8004DFE18 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				685A6F531E994762009A3206 /* LayeredIcon.swift */,
 				7C94A1F01E9E6A72009DB5A3 /* Subclass with Delegate */,
 				7C94A1EF1E9E6A1A009DB5A3 /* MultiCol Table Labels */,
+				7C389CC61EBD1E44005F45D4 /* FitFillFuncs.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				685A6F541E994762009A3206 /* LayeredIcon.swift in Sources */,
 				685A6F5A1E9980D6009A3206 /* SearchMapViewController.swift in Sources */,
 				68A22D8A1E7EE865005DB1EF /* ScratchSB2ViewController.swift in Sources */,
+				7C389CC71EBD1E44005F45D4 /* FitFillFuncs.swift in Sources */,
 				7CD27CFA1E686DD900B7FD2D /* BetterButtonViewController.swift in Sources */,
 				7CD27CF81E686D8C00B7FD2D /* BetterButton.swift in Sources */,
 			);
