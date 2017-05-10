@@ -33,6 +33,7 @@
 		7C94A1EC1E9E54F6009DB5A3 /* TwoColTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A1EB1E9E54F6009DB5A3 /* TwoColTableViewController.swift */; };
 		7C94A1EE1E9E5508009DB5A3 /* TwoColTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A1ED1E9E5508009DB5A3 /* TwoColTableViewCell.swift */; };
 		7C9DA2F01E79C88800614651 /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA2EF1E79C88800614651 /* MyPickerView.swift */; };
+		7CB57CBB1EC3B95500BBD233 /* BoxedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB57CBA1EC3B95500BBD233 /* BoxedTableViewController.swift */; };
 		7CCADA731E85783000C92473 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCADA721E85783000C92473 /* Third.storyboard */; };
 		7CCADA751E85785500C92473 /* ThirdMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCADA741E85785500C92473 /* ThirdMainViewController.swift */; };
 		7CCADA771E85787800C92473 /* ContainerAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCADA761E85787800C92473 /* ContainerAViewController.swift */; };
@@ -77,6 +78,7 @@
 		7C94A1EB1E9E54F6009DB5A3 /* TwoColTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColTableViewController.swift; sourceTree = "<group>"; };
 		7C94A1ED1E9E5508009DB5A3 /* TwoColTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColTableViewCell.swift; sourceTree = "<group>"; };
 		7C9DA2EF1E79C88800614651 /* MyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
+		7CB57CBA1EC3B95500BBD233 /* BoxedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedTableViewController.swift; sourceTree = "<group>"; };
 		7CCADA721E85783000C92473 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		7CCADA741E85785500C92473 /* ThirdMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdMainViewController.swift; sourceTree = "<group>"; };
 		7CCADA761E85787800C92473 /* ContainerAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerAViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				7C94A1F01E9E6A72009DB5A3 /* Subclass with Delegate */,
 				7C94A1EF1E9E6A1A009DB5A3 /* MultiCol Table Labels */,
 				7C389CC61EBD1E44005F45D4 /* FitFillFuncs.swift */,
+				7CB57CBA1EC3B95500BBD233 /* BoxedTableViewController.swift */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				7CCADA771E85787800C92473 /* ContainerAViewController.swift in Sources */,
 				7CEF5F641E64A4D9005A5E88 /* SampleView.swift in Sources */,
 				68A22D3E1E7462B5005DB1EF /* GridOfBoxesViewController.swift in Sources */,
+				7CB57CBB1EC3B95500BBD233 /* BoxedTableViewController.swift in Sources */,
 				7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */,
 				7C94A1EE1E9E5508009DB5A3 /* TwoColTableViewCell.swift in Sources */,
 				7CE4E7CD1E770BDB00A01F64 /* ShadowedViewController.swift in Sources */,
