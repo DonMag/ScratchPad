@@ -16,9 +16,11 @@ class BoxedCell: UITableViewCell {
 	
 	var brdColor = UIColor(white: 0.7, alpha: 1.0)
 	
+	// "spacer" view is just a 1-pt tall UIView used as a horizontal-line between labels
+	//		when there is more than one title label
 	func getSpacer() -> UIView {
 		
-		let newView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 20))
+		let newView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 1))
 		newView.backgroundColor = brdColor
 		
 		newView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +31,8 @@ class BoxedCell: UITableViewCell {
 		
 	}
 	
+	// "label view" is a UIView containing on UILabel
+	//		embedding the label in a view allows for convenient borders and insets
 	func getLabelView(text: String, position: Int) -> UIView {
 		
 		let v = UIView()
@@ -54,6 +58,13 @@ class BoxedCell: UITableViewCell {
 		
 		var iTop: CGFloat = 0.0
 		var iBot: CGFloat = 0.0
+		
+		// the passed "position" tells me whether this label is:
+		//		a Single Title only
+		//		the first Title of more than one
+		//		the last Title of more than one
+		//		or a Title with a Title above and below
+		// so we can set up proper top/bottom padding
 		
 		switch position {
 		case 0:
@@ -84,20 +95,13 @@ class BoxedCell: UITableViewCell {
 		
 	}
 	
-	func getLabel() -> UILabel {
-		
-		let newLabel = UILabel()
-		newLabel.font = UIFont.systemFont(ofSize: 15.0)
-		newLabel.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
-		newLabel.textColor = .black
-		
-		newLabel.translatesAutoresizingMaskIntoConstraints = false
-		
-		return newLabel
-		
-	}
-	
-	func setupThisCell(n: Int) -> Void {
+	func setupThisCell(rowNumber: Int) -> Void {
+
+		// if containingView is nil, it hasn't been created yet
+		//		so, create it + Stack view + Button
+		// else
+		//		don't create new ones
+		// This way, we don't keep adding more and more views to the cell on reuse
 		
 		if containingView == nil {
 			
@@ -148,27 +152,35 @@ class BoxedCell: UITableViewCell {
 			
 		}
 		
+		// remove all previously added Title labels and spacer views
+		
 		for v in theStackView.arrangedSubviews {
 			v.removeFromSuperview()
 		}
 		
+		// setup 1 to 5 Titles
+		let n = rowNumber % 5 + 1
+		
+		// create new Title Label views and, if needed, spacer views
+		//		and add them to the Stack view
+		
 		if n == 1 {
 			
-			let aLabel = getLabelView(text: "Only one title", position: 0)
+			let aLabel = getLabelView(text: "Only one title for row: \(rowNumber)", position: 0)
 			theStackView.addArrangedSubview(aLabel)
 			
 		} else {
 			
 			for i in 1..<n {
 				
-				let aLabel = getLabelView(text: "Title \n number \(i)", position: i)
+				let aLabel = getLabelView(text: "Title number \(i)\n for row: \(rowNumber)", position: i)
 				theStackView.addArrangedSubview(aLabel)
 				let aSpacer = getSpacer()
 				theStackView.addArrangedSubview(aSpacer)
 				
 			}
 			
-			let aLabel = getLabelView(text: "Title number \(n)", position: -1)
+			let aLabel = getLabelView(text: "Title number \(n)\n for row: \(rowNumber)", position: -1)
 			theStackView.addArrangedSubview(aLabel)
 			
 		}
@@ -200,7 +212,7 @@ class BoxedTableViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 25
+		return 1250
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -209,7 +221,7 @@ class BoxedTableViewController: UITableViewController {
 		
 		// Configure the cell...
 		
-		cell.setupThisCell(n: indexPath.row % 5 + 1)
+		cell.setupThisCell(rowNumber: indexPath.row)
 		
 		return cell
 		

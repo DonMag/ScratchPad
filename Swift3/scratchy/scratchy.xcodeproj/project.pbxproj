@@ -16,6 +16,7 @@
 		68A22D3E1E7462B5005DB1EF /* GridOfBoxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A22D3D1E7462B5005DB1EF /* GridOfBoxesViewController.swift */; };
 		68A22D881E7EC961005DB1EF /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A22D871E7EC961005DB1EF /* Second.storyboard */; };
 		68A22D8A1E7EE865005DB1EF /* ScratchSB2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A22D891E7EE865005DB1EF /* ScratchSB2ViewController.swift */; };
+		68C271C21EC416260072E0A7 /* BoxedTableSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C271C11EC416260072E0A7 /* BoxedTableSB.storyboard */; };
 		7C05E9BB1E647B1600C13F9E /* StackWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */; };
 		7C1AC34E1E9518390034D756 /* KBAutoScrollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1AC34D1E9518390034D756 /* KBAutoScrollTableViewController.swift */; };
 		7C1AC3501E9519860034D756 /* KBNoAutoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1AC34F1E9519860034D756 /* KBNoAutoScrollViewController.swift */; };
@@ -59,6 +60,7 @@
 		68A22D3D1E7462B5005DB1EF /* GridOfBoxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridOfBoxesViewController.swift; sourceTree = "<group>"; };
 		68A22D871E7EC961005DB1EF /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		68A22D891E7EE865005DB1EF /* ScratchSB2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchSB2ViewController.swift; sourceTree = "<group>"; };
+		68C271C11EC416260072E0A7 /* BoxedTableSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoxedTableSB.storyboard; sourceTree = "<group>"; };
 		7C05E9BA1E647B1600C13F9E /* StackWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWorkViewController.swift; sourceTree = "<group>"; };
 		7C1AC34D1E9518390034D756 /* KBAutoScrollTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBAutoScrollTableViewController.swift; sourceTree = "<group>"; };
 		7C1AC34F1E9519860034D756 /* KBNoAutoScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBNoAutoScrollViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				7C94A1EF1E9E6A1A009DB5A3 /* MultiCol Table Labels */,
 				7C389CC61EBD1E44005F45D4 /* FitFillFuncs.swift */,
 				7CB57CBA1EC3B95500BBD233 /* BoxedTableViewController.swift */,
+				68C271C11EC416260072E0A7 /* BoxedTableSB.storyboard */,
 			);
 			path = scratchy;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				7CF9D3621E9D80FA00098717 /* Fourth.storyboard in Resources */,
 				7CEF5F5C1E648C02005A5E88 /* SampleView.xib in Resources */,
+				68C271C21EC416260072E0A7 /* BoxedTableSB.storyboard in Resources */,
 				7C205F3D1E521C0C00CEC340 /* LaunchScreen.storyboard in Resources */,
 				7C205F3A1E521C0C00CEC340 /* Assets.xcassets in Resources */,
 				685A6F521E993EDE009A3206 /* LayersWork.xcassets in Resources */,
